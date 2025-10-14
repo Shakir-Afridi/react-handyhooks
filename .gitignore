@@ -23,3 +23,6 @@ react-handyhooks-1.0.0.tgz
 *.njsproj
 *.sln
 *.sw?
+
+coverage/
+dist/**/*.map

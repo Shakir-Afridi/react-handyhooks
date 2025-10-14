@@ -13,7 +13,7 @@ export default defineConfig({
     build: {
         lib: {
             entry: "src/index.ts",
-            name: "ReactPowerhooks",
+            name: "ReactHandyhooks",
             fileName: (format) => `react-handyhooks.${format}.js`,
         },
         rollupOptions: {
