@@ -1,6 +1,5 @@
 # ⚡ React Powerhooks
 
-[![npm version](https://img.shields.io/npm/v/react-handyhooks?color=blue)](https://www.npmjs.com/package/react-handyhooks)
 [![license](https://img.shields.io/github/license/Shakir-Afridi/react-handyhooks)](LICENSE)
 [![issues](https://img.shields.io/github/issues/Shakir-Afridi/react-handyhooks)](https://github.com/Shakir-Afridi/react-handyhooks/issues)
 [![typescript](https://img.shields.io/badge/TypeScript-Ready-3178C6?logo=typescript)](https://www.typescriptlang.org/)
