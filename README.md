@@ -1,5 +1,6 @@
 # ⚡ React Hookstack
 
+[![build](https://img.shields.io/github/actions/workflow/status/Shakir-Afridi/react-handyhooks/.github/workflows/public.yml?branch=dev)](https://github.com/Shakir-Afridi/react-handyhooks/actions)
 [![license](https://img.shields.io/github/license/Shakir-Afridi/react-handyhooks)](LICENSE)
 [![issues](https://img.shields.io/github/issues/Shakir-Afridi/react-handyhooks)](https://github.com/Shakir-Afridi/react-handyhooks/issues)
 [![typescript](https://img.shields.io/badge/TypeScript-Ready-3178C6?logo=typescript)](https://www.typescriptlang.org/)
