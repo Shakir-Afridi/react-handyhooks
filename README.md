@@ -1,4 +1,4 @@
-# ⚡ React Powerhooks
+# ⚡ React Hookstack
 
 [![license](https://img.shields.io/github/license/Shakir-Afridi/react-handyhooks)](LICENSE)
 [![issues](https://img.shields.io/github/issues/Shakir-Afridi/react-handyhooks)](https://github.com/Shakir-Afridi/react-handyhooks/issues)
@@ -224,7 +224,7 @@ git push origin feature/my-new-hook
 
 ## 👨‍💻 Author
 
-React Powerhooks — maintained by passionate open-source developers who believe in clean, reusable React logic
+React Hookstack — maintained by passionate open-source developers who believe in clean, reusable React logic
 
 ## ⭐ Support
 
