@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useToggle } from "../useToggle";
+import { useToggle } from "../state/useToggle";
 import { Button, Card, CardContent, Typography } from "@mui/material";
 
 const ToggleDemo = () => {

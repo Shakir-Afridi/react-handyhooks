@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useTimeout } from "../useTimeout";
+import { useTimeout } from "../effects/useTimeout";
 import { Button, Card, CardContent, Typography } from "@mui/material";
 
 const TimeoutDemo = () => {

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { render, act } from "@testing-library/react";
-import useAsync, { UseAsyncReturn } from "../useAsync";
+import useAsync, { UseAsyncReturn } from "../effects/useAsync";
 
 // Helper component to test the hook
 function TestComponent({

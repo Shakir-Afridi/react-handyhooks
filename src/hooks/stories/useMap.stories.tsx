@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useMap } from "../useMap";
+import { useMap } from "../browser/useMap";
 import {
     Button,
     TextField,
@@ -19,7 +19,7 @@ const MapDemo = () => {
     const [val, setVal] = useState("");
 
     return (
-        <Card sx={{ p: 2, borderRadius: 3, boxShadow: 3 }}>
+        <Card sx={{ minWidth: 300, p: 2, borderRadius: 3, boxShadow: 3 }}>
             <CardContent>
                 <Typography variant="h6" sx={{ mb: 2 }}>
                     Map Entries
@@ -27,6 +27,7 @@ const MapDemo = () => {
                 <List>
                     {[...map.entries()].map(([k, v]) => (
                         <ListItem
+                            sx={{ pl: 0 }}
                             key={k}
                             secondaryAction={
                                 <Button size="small" onClick={() => remove(k)}>
@@ -50,6 +51,7 @@ const MapDemo = () => {
                     onChange={(e) => setVal(e.target.value)}
                     sx={{ mr: 1 }}
                 />
+                <Typography sx={{ mt: 2 }} />
                 <Button
                     variant="contained"
                     onClick={() => {
@@ -57,6 +59,7 @@ const MapDemo = () => {
                         setKey("");
                         setVal("");
                     }}
+                    disabled={!val || !key}
                     sx={{ mr: 1 }}
                 >
                     Add/Update

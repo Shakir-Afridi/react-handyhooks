@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useWindowSize } from "../useWindowSize";
+import { useWindowSize } from "../browser/useWindowSize";
 
 describe("useWindowSize", () => {
     const originalInnerWidth = global.innerWidth;

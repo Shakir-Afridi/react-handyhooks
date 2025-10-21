@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useUpdateEffect } from "../useUpdateEffect";
+import { useUpdateEffect } from "../effects/useUpdateEffect";
 
 describe("useUpdateEffect", () => {
     it("should not call the effect on the first render", () => {

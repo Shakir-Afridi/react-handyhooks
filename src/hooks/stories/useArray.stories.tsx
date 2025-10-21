@@ -8,7 +8,7 @@ import {
     Stack,
     TextField,
 } from "@mui/material";
-import { useArray } from "../useArray";
+import { useArray } from "../state/useArray";
 
 const meta: Meta = {
     title: "Hooks/useArray",

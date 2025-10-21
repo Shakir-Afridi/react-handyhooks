@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useDeviceOrientation } from "../useDeviceOrientation";
+import { useDeviceOrientation } from "../ui/useDeviceOrientation";
 import { Card, CardContent, Typography } from "@mui/material";
 
 const DeviceOrientationDemo = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { render, act } from "@testing-library/react";
-import { useBoolean } from "../useBoolean";
+import { useBoolean } from "../state/useBoolean";
 
 // Helper component to test the hook
 function TestComponent({

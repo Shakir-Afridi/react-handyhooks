@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { render, fireEvent } from "@testing-library/react";
-import { useClickOutside } from "../useClickOutside";
+import { useClickOutside } from "../ui/useClickOutside";
 
 describe("useClickOutside hook", () => {
     it("should call handler when clicking outside the element", () => {

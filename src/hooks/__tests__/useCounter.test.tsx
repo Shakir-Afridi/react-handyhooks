@@ -1,6 +1,6 @@
 import React from "react";
 import { render, act } from "@testing-library/react";
-import { useCounter, UseCounterReturn } from "../useCounter";
+import { useCounter, UseCounterReturn } from "../state/useCounter";
 
 describe("useCounter hook", () => {
     it("should initialize with default value", () => {

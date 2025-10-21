@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useCounter } from "../useCounter";
+import { useCounter } from "../state/useCounter";
 import { Button, Card, CardContent, Typography } from "@mui/material";
 
 const CounterDemo = () => {

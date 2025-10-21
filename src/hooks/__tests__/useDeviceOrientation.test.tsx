@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useDeviceOrientation } from "../useDeviceOrientation";
+import { useDeviceOrientation } from "../ui/useDeviceOrientation";
 
 describe("useDeviceOrientation hook", () => {
     let listeners: Record<string, ((e: any) => void)[]> = {};

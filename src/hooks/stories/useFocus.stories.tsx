@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useFocus } from "../useFocus";
+import { useFocus } from "../ui/useFocus";
 import {
     Button,
     Card,
@@ -13,13 +13,15 @@ const FocusDemo = () => {
     const { ref, focus, blur, isFocused } = useFocus<HTMLInputElement>();
 
     return (
-        <Card sx={{ p: 2, borderRadius: 3, boxShadow: 3 }}>
+        <Card sx={{ minWidth: 300, p: 2, borderRadius: 3, boxShadow: 3 }}>
             <CardContent>
                 <TextField
                     inputRef={ref}
                     label="Focusable Input"
                     sx={{ mr: 2 }}
+                    fullWidth
                 />
+                <Typography sx={{ mt: 2 }} />
                 <Button variant="contained" onClick={focus} sx={{ mr: 1 }}>
                     Focus
                 </Button>

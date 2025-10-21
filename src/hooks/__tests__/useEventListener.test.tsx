@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useEventListener } from "../useEventListener";
+import { useEventListener } from "../browser/useEventListener";
 
 describe("useEventListener hook", () => {
     let addEventListenerSpy: jest.SpyInstance;

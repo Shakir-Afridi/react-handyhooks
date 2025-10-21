@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useInput } from "../useInput";
+import { useInput } from "../browser/useInput";
 
 describe("useInput hook", () => {
     it("should initialize with empty string if no initialValue is provided", () => {

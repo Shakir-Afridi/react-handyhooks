@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useDebounce } from "../useDebounce";
+import { useDebounce } from "../effects/useDebounce";
 import { Card, CardContent, Typography, TextField } from "@mui/material";
 
 const DebounceDemo = () => {

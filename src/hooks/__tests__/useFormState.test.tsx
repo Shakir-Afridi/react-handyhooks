@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useFormState } from "../useFormState";
+import { useFormState } from "../state/useFormState";
 
 interface FormValues {
     name: string;

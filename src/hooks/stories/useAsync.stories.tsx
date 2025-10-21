@@ -9,7 +9,7 @@ import {
     Stack,
     Alert,
 } from "@mui/material";
-import useAsync from "../useAsync";
+import useAsync from "../effects/useAsync";
 
 // --- Fake async function (simulates API call) ---
 const fetchRandomUser = async () => {

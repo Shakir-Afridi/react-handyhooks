@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useHover } from "../useHover";
+import { useHover } from "../ui/useHover";
 import { Card, CardContent, Typography } from "@mui/material";
 
 const HoverDemo = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { render, act } from "@testing-library/react";
-import useArray from "../useArray";
+import useArray from "../state/useArray";
 
 // Helper component to test the hook
 function TestComponent({

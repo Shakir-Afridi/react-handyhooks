@@ -1,6 +1,6 @@
 import React from "react";
 import { render, act, waitFor } from "@testing-library/react";
-import { useDarkMode, UseDarkModeReturn } from "../useDarkMode";
+import { useDarkMode, UseDarkModeReturn } from "../ui/useDarkMode";
 
 describe("useDarkMode hook", () => {
     const storageKey = "theme";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useCopyToClipboard } from "../useCopyToClipboard";
+import { useCopyToClipboard } from "../browser/useCopyToClipboard";
 import {
     Button,
     Card,

@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useBoolean } from "../useBoolean";
+import { useBoolean } from "../state/useBoolean";
 import { Button, Card, CardContent, Typography } from "@mui/material";
 
 const BooleanDemo = () => {

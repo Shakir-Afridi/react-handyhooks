@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { usePrevious } from "../usePrevious";
+import { usePrevious } from "../state/usePrevious";
 import { Button, Card, CardContent, Typography } from "@mui/material";
 
 const PreviousDemo = () => {

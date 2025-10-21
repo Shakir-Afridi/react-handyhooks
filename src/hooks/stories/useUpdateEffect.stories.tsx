@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useUpdateEffect } from "../useUpdateEffect";
+import { useUpdateEffect } from "../effects/useUpdateEffect";
 import { Button, Card, CardContent, Typography } from "@mui/material";
 
 const UpdateEffectDemo = () => {

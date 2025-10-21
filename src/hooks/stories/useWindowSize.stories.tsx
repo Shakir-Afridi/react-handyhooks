@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useWindowSize } from "../useWindowSize";
+import { useWindowSize } from "../browser/useWindowSize";
 import { Card, CardContent, Typography } from "@mui/material";
 
 const WindowSizeDemo = () => {

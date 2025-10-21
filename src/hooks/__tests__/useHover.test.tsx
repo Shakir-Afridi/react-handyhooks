@@ -1,5 +1,5 @@
 import { render, fireEvent } from "@testing-library/react";
-import { useHover } from "../useHover";
+import { useHover } from "../ui/useHover";
 import React from "react";
 
 function TestComponent() {

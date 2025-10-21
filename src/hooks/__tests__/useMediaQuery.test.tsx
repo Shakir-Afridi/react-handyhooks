@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useMediaQuery } from "../useMediaQuery";
+import { useMediaQuery } from "../ui/useMediaQuery";
 
 describe("useMediaQuery hook", () => {
     const query = "(max-width: 768px)";

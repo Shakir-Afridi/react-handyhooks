@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useSessionStorage } from "../useSessionStorage";
+import { useSessionStorage } from "../storage/useSessionStorage";
 import {
     Button,
     TextField,
@@ -16,7 +16,7 @@ const SessionStorageDemo = () => {
     );
 
     return (
-        <Card sx={{ p: 2, borderRadius: 3, boxShadow: 3 }}>
+        <Card sx={{ minWidth: 300, p: 2, borderRadius: 3, boxShadow: 3 }}>
             <CardContent>
                 <Typography variant="h6" sx={{ mb: 2 }}>
                     Session Storage Value: {value}
@@ -25,7 +25,8 @@ const SessionStorageDemo = () => {
                     label="Set Value"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
-                    sx={{ mr: 2 }}
+                    sx={{ mr: 2, mb: 2 }}
+                    fullWidth
                 />
                 <Button variant="outlined" onClick={() => setValue("")}>
                     Clear

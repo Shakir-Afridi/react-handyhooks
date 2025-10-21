@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useEventListener } from "../useEventListener";
+import { useEventListener } from "../browser/useEventListener";
 import { Card, CardContent, Typography } from "@mui/material";
 
 const EventListenerDemo = () => {

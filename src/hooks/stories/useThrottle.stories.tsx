@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useThrottle } from "../useThrottle";
+import { useThrottle } from "../effects/useThrottle";
 import { Button, Card, CardContent, Typography } from "@mui/material";
 
 const ThrottleDemo = () => {

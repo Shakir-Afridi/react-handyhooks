@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useRefState } from "../useRafState";
+import { useRefState } from "../state/useRafState";
 
 describe("useRefState hook", () => {
     it("should initialize state and ref with the initial value", () => {

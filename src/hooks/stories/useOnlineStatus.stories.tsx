@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useOnlineStatus } from "../useOnlineStatus";
+import { useOnlineStatus } from "../browser/useOnlineStatus";
 import { Card, CardContent, Typography } from "@mui/material";
 
 const OnlineStatusDemo = () => {

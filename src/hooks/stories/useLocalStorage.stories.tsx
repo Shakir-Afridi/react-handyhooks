@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useLocalStorage } from "../useLocalStorage";
+import { useLocalStorage } from "../storage/useLocalStorage";
 import {
     Button,
     TextField,
@@ -16,7 +16,7 @@ const LocalStorageDemo = () => {
     );
 
     return (
-        <Card sx={{ p: 2, borderRadius: 3, boxShadow: 3 }}>
+        <Card sx={{ minWidth: 300, p: 2, borderRadius: 3, boxShadow: 3 }}>
             <CardContent>
                 <Typography variant="h6" sx={{ mb: 2 }}>
                     Local Storage Value: {value}
@@ -25,7 +25,8 @@ const LocalStorageDemo = () => {
                     label="Set Value"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
-                    sx={{ mr: 2 }}
+                    sx={{ mr: 2, mb: 2 }}
+                    fullWidth
                 />
                 <Button variant="outlined" onClick={removeValue}>
                     Remove

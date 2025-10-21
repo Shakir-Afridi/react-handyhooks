@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useClickOutside } from "../useClickOutside";
+import { useClickOutside } from "../ui/useClickOutside";
 import { Card, CardContent, Typography, Box, Button } from "@mui/material";
 
 const ClickOutsideDemo = () => {

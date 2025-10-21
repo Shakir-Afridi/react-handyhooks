@@ -1,6 +1,6 @@
 import React from "react";
 import { render, act } from "@testing-library/react";
-import { useCopyToClipboard } from "../useCopyToClipboard";
+import { useCopyToClipboard } from "../browser/useCopyToClipboard";
 
 describe("useCopyToClipboard hook", () => {
     beforeEach(() => {

@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useOnlineStatus } from "../useOnlineStatus";
+import { useOnlineStatus } from "../browser/useOnlineStatus";
 
 describe("useOnlineStatus hook", () => {
     let onlineListeners: (() => void)[] = [];

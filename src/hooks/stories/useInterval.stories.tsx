@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useInterval } from "../useInterval";
+import { useInterval } from "../effects/useInterval";
 import { Button, Card, CardContent, Typography } from "@mui/material";
 
 const IntervalDemo = () => {

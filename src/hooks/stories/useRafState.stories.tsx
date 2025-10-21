@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useRefState } from "../useRafState";
+import { useRefState } from "../state/useRafState";
 import { Button, Card, CardContent, Typography } from "@mui/material";
 
 const RafStateDemo = () => {

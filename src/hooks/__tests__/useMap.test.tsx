@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useMap } from "../useMap";
+import { useMap } from "../browser/useMap";
 
 describe("useMap hook", () => {
     const initialEntries: [string, number][] = [

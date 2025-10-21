@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useFocus } from "../useFocus";
+import { useFocus } from "../ui/useFocus";
 
 describe("useFocus hook", () => {
     it("should initialize with correct ref and isFocused false", () => {

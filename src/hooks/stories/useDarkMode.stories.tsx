@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useDarkMode } from "../useDarkMode";
+import { useDarkMode } from "../ui/useDarkMode";
 import { Button, Card, CardContent, Typography } from "@mui/material";
 
 const DarkModeDemo = () => {
