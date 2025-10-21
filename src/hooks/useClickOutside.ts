@@ -18,7 +18,7 @@ import { useEffect } from "react";
  * @param handler - Callback function invoked when a click occurs outside the element.
  * @param eventType - The event type to listen for (default: 'mousedown').
  */
-export function useClickOutside<T extends HTMLElement = HTMLElement>(
+export function useClickOutside<T extends HTMLElement | null = HTMLElement>(
     ref: React.RefObject<T>,
     handler: (event: MouseEvent | TouchEvent) => void,
     eventType: "mousedown" | "mouseup" | "click" | "touchstart" = "mousedown"
