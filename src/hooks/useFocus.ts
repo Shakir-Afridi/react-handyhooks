@@ -25,7 +25,7 @@ import { useRef, useCallback } from "react";
  */
 export function useFocus<T extends HTMLElement>() {
     const ref = useRef<T>(null);
-    const isFocused = useRef(false);
+    const isFocused = useRef<boolean>(false);
 
     const focus = useCallback(() => {
         if (ref.current) {
