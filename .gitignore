@@ -26,3 +26,6 @@ react-handyhooks-1.0.0.tgz
 
 coverage/
 dist/**/*.map
+
+*storybook.log
+storybook-static

@@ -11,7 +11,8 @@
         "target": "ESNext",
         "module": "ESNext",
         "allowSyntheticDefaultImports": true,
-        "strict": true
+        "strict": true,
+        "importHelpers": true
     },
     "include": ["src"]
 }
