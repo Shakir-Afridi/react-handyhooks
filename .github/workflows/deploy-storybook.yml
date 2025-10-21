@@ -3,7 +3,7 @@ name: 📘 Deploy Storybook
 on:
   push:
     branches:
-      - gh-pages # Change this if you want a different branch
+      - dev # Change this if you want a different branch
   workflow_dispatch: # allows manual triggers from GitHub UI
 
 permissions:
