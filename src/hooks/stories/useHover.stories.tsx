@@ -28,7 +28,7 @@ const HoverDemo = () => {
 };
 
 const meta: Meta<typeof HoverDemo> = {
-    title: "Hooks/useHover",
+    title: "Hooks/UI/useHover",
     component: HoverDemo,
     parameters: {
         layout: "centered",

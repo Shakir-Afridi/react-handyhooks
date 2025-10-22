@@ -45,7 +45,7 @@ const CopyToClipboardDemo = () => {
 };
 
 const meta: Meta<typeof CopyToClipboardDemo> = {
-    title: "Hooks/useCopyToClipboard",
+    title: "Hooks/Browser/useCopyToClipboard",
     component: CopyToClipboardDemo,
     parameters: {
         layout: "centered",

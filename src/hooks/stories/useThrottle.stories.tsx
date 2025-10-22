@@ -29,7 +29,7 @@ const ThrottleDemo = () => {
 };
 
 const meta: Meta<typeof ThrottleDemo> = {
-    title: "Hooks/useThrottle",
+    title: "Hooks/Effects/useThrottle",
     component: ThrottleDemo,
     parameters: {
         layout: "centered",

@@ -36,7 +36,7 @@ const IntervalDemo = () => {
 };
 
 const meta: Meta<typeof IntervalDemo> = {
-    title: "Hooks/useInterval",
+    title: "Hooks/Effects/useInterval",
     component: IntervalDemo,
     parameters: {
         layout: "centered",

@@ -34,7 +34,7 @@ const FocusDemo = () => {
 };
 
 const meta: Meta<typeof FocusDemo> = {
-    title: "Hooks/useFocus",
+    title: "Hooks/UI/useFocus",
     component: FocusDemo,
     parameters: {
         layout: "centered",

@@ -29,7 +29,7 @@ const PreviousDemo = () => {
 };
 
 const meta: Meta<typeof PreviousDemo> = {
-    title: "Hooks/usePrevious",
+    title: "Hooks/State/usePrevious",
     component: PreviousDemo,
     parameters: {
         layout: "centered",

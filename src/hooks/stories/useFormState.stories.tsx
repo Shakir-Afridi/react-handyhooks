@@ -77,7 +77,7 @@ const FormDemo = () => {
 };
 
 const meta: Meta<typeof FormDemo> = {
-    title: "Hooks/useFormState",
+    title: "Hooks/State/useFormState",
     component: FormDemo,
     parameters: {
         layout: "centered",

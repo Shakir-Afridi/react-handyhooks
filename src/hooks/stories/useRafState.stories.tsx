@@ -26,7 +26,7 @@ const RafStateDemo = () => {
 };
 
 const meta: Meta<typeof RafStateDemo> = {
-    title: "Hooks/useRefState",
+    title: "Hooks/State/useRefState",
     component: RafStateDemo,
     parameters: {
         layout: "centered",

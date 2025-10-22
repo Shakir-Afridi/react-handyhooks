@@ -19,7 +19,7 @@ const WindowSizeDemo = () => {
 };
 
 const meta: Meta<typeof WindowSizeDemo> = {
-    title: "Hooks/useWindowSize",
+    title: "Hooks/Browser/useWindowSize",
     component: WindowSizeDemo,
     parameters: {
         layout: "centered",

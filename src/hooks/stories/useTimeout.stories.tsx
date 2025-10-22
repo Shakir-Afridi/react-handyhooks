@@ -35,7 +35,7 @@ const TimeoutDemo = () => {
 };
 
 const meta: Meta<typeof TimeoutDemo> = {
-    title: "Hooks/useTimeout",
+    title: "Hooks/Effects/useTimeout",
     component: TimeoutDemo,
     parameters: {
         layout: "centered",

@@ -98,7 +98,7 @@ const DemoAsyncComponent: React.FC = () => {
 };
 
 const meta: Meta<typeof DemoAsyncComponent> = {
-    title: "Hooks/useAsync",
+    title: "Hooks/Effects/useAsync",
     component: DemoAsyncComponent,
     parameters: {
         layout: "centered",

@@ -27,7 +27,7 @@ const OnlineStatusDemo = () => {
 };
 
 const meta: Meta<typeof OnlineStatusDemo> = {
-    title: "Hooks/useOnlineStatus",
+    title: "Hooks/Browser/useOnlineStatus",
     component: OnlineStatusDemo,
     parameters: {
         layout: "centered",

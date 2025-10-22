@@ -25,7 +25,7 @@ const DeviceOrientationDemo = () => {
 };
 
 const meta: Meta<typeof DeviceOrientationDemo> = {
-    title: "Hooks/useDeviceOrientation",
+    title: "Hooks/UI/useDeviceOrientation",
     component: DeviceOrientationDemo,
     parameters: {
         layout: "centered",

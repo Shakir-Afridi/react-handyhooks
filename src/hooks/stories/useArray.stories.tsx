@@ -11,7 +11,7 @@ import {
 import { useArray } from "../state/useArray";
 
 const meta: Meta = {
-    title: "Hooks/useArray",
+    title: "Hooks/State/useArray",
     parameters: {
         layout: "centered",
     },

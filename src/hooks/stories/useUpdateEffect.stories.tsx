@@ -31,7 +31,7 @@ const UpdateEffectDemo = () => {
 };
 
 const meta: Meta<typeof UpdateEffectDemo> = {
-    title: "Hooks/useUpdateEffect",
+    title: "Hooks/Effects/useUpdateEffect",
     component: UpdateEffectDemo,
     parameters: {
         layout: "centered",

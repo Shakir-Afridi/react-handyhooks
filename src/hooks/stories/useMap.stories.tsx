@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { useMap } from "../browser/useMap";
+import { useMap } from "../state/useMap";
 import {
     Button,
     TextField,
@@ -76,7 +76,7 @@ const MapDemo = () => {
 };
 
 const meta: Meta<typeof MapDemo> = {
-    title: "Hooks/useMap",
+    title: "Hooks/State/useMap",
     component: MapDemo,
     parameters: {
         layout: "centered",

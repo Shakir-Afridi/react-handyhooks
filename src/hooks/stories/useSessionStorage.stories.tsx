@@ -37,7 +37,7 @@ const SessionStorageDemo = () => {
 };
 
 const meta: Meta<typeof SessionStorageDemo> = {
-    title: "Hooks/useSessionStorage",
+    title: "Hooks/Storage/useSessionStorage",
     component: SessionStorageDemo,
     parameters: {
         layout: "centered",

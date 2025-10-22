@@ -25,7 +25,7 @@ const DebounceDemo = () => {
 };
 
 const meta: Meta<typeof DebounceDemo> = {
-    title: "Hooks/useDebounce",
+    title: "Hooks/Effects/useDebounce",
     component: DebounceDemo,
     parameters: {
         layout: "centered",

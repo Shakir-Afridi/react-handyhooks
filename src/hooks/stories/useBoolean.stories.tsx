@@ -26,7 +26,7 @@ const BooleanDemo = () => {
 };
 
 const meta: Meta<typeof BooleanDemo> = {
-    title: "Hooks/useBoolean",
+    title: "Hooks/State/useBoolean",
     component: BooleanDemo,
     parameters: {
         layout: "centered",

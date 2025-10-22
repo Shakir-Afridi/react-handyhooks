@@ -27,7 +27,7 @@ const DarkModeDemo = () => {
 };
 
 const meta: Meta<typeof DarkModeDemo> = {
-    title: "Hooks/useDarkMode",
+    title: "Hooks/UI/useDarkMode",
     component: DarkModeDemo,
     parameters: {
         layout: "centered",

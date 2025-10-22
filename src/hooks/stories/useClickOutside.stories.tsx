@@ -30,7 +30,7 @@ const ClickOutsideDemo = () => {
 };
 
 const meta: Meta<typeof ClickOutsideDemo> = {
-    title: "Hooks/useClickOutside",
+    title: "Hooks/UI/useClickOutside",
     component: ClickOutsideDemo,
     parameters: {
         layout: "centered",

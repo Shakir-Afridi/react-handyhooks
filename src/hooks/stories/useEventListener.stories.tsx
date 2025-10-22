@@ -30,7 +30,7 @@ const EventListenerDemo = () => {
 };
 
 const meta: Meta<typeof EventListenerDemo> = {
-    title: "Hooks/useEventListener",
+    title: "Hooks/Browser/useEventListener",
     component: EventListenerDemo,
     parameters: {
         layout: "centered",

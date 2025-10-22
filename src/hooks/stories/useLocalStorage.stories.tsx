@@ -37,7 +37,7 @@ const LocalStorageDemo = () => {
 };
 
 const meta: Meta<typeof LocalStorageDemo> = {
-    title: "Hooks/useLocalStorage",
+    title: "Hooks/Storage/useLocalStorage",
     component: LocalStorageDemo,
     parameters: {
         layout: "centered",

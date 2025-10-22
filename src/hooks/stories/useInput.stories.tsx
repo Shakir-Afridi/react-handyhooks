@@ -36,7 +36,7 @@ const InputDemo = () => {
 };
 
 const meta: Meta<typeof InputDemo> = {
-    title: "Hooks/useInput",
+    title: "Hooks/Browser/useInput",
     component: InputDemo,
     parameters: {
         layout: "centered",

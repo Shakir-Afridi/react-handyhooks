@@ -29,7 +29,7 @@ const CounterDemo = () => {
 };
 
 const meta: Meta<typeof CounterDemo> = {
-    title: "Hooks/useCounter",
+    title: "Hooks/State/useCounter",
     component: CounterDemo,
     parameters: {
         layout: "centered",

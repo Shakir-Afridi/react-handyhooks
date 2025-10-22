@@ -35,7 +35,7 @@ const ToggleDemo = () => {
 };
 
 const meta: Meta<typeof ToggleDemo> = {
-    title: "Hooks/useToggle",
+    title: "Hooks/State/useToggle",
     component: ToggleDemo,
     parameters: {
         layout: "centered",
