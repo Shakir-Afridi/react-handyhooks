@@ -1,6 +1,6 @@
 {
     "name": "react-hookstack",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "A collection of powerful and reusable React hooks.",
     "main": "dist/react-handyhooks.umd.js",
     "module": "dist/react-handyhooks.es.js",
@@ -54,5 +54,28 @@
         "react": ">=18",
         "react-dom": ">=18"
     },
+    "keywords": [
+        "react",
+        "hooks",
+        "react-hooks",
+        "custom-hooks",
+        "typescript",
+        "state-management",
+        "utility-hooks",
+        "ui-hooks",
+        "performance-hooks",
+        "browser-hooks",
+        "useBattery",
+        "useGeolocation",
+        "useScrollPosition",
+        "useMousePosition",
+        "useClipboard",
+        "useDrag",
+        "useIntersectionObserver",
+        "useLongPress",
+        "react-library",
+        "frontend"
+    ],
+    "author": "Shakir Ullah",
     "license": "MIT"
 }
