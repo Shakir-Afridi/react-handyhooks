@@ -1,6 +1,6 @@
 {
     "name": "react-hookstack",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "A collection of powerful and reusable React hooks.",
     "main": "dist/react-handyhooks.umd.js",
     "module": "dist/react-handyhooks.es.js",
