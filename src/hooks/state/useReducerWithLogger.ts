@@ -1,4 +1,4 @@
-import { useReducer, Reducer } from "react";
+import { useReducer, Reducer, useRef, useEffect } from "react";
 
 /**
  * @hook useReducerWithLogger
@@ -28,15 +28,27 @@ import { useReducer, Reducer } from "react";
  */
 function useReducerWithLogger<S, A>(reducer: Reducer<S, A>, initialState: S) {
     const [state, dispatch] = useReducer(reducer, initialState);
+    const prevStateRef = useRef<S>(state);
+    const lastActionRef = useRef<A | null>(null);
 
     const dispatchWithLogger = (action: A) => {
-        console.groupCollapsed("useReducerWithLogger");
-        console.log("%cPrevious State:", "color: #9E9E9E;", state);
+        console.groupCollapsed("Previous State");
+        console.log("%cValue:", "color: #9E9E9E;", prevStateRef.current);
         console.log("%cAction:", "color: #03A9F4;", action);
+        lastActionRef.current = action;
         dispatch(action);
-        console.log("%cNext State (after dispatch):", "color: #4CAF50;", state);
         console.groupEnd();
     };
+
+    useEffect(() => {
+        if (lastActionRef.current !== null) {
+            console.groupCollapsed("Next State (after dispatch)");
+            console.log("%cValue:", "color: #4CAF50;", state);
+            console.groupEnd();
+            prevStateRef.current = state;
+            lastActionRef.current = null;
+        }
+    }, [state]);
 
     return [state, dispatchWithLogger] as const;
 }
