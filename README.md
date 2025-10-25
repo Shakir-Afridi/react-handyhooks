@@ -4,7 +4,6 @@
 [![issues](https://img.shields.io/github/issues/Shakir-Afridi/react-handyhooks)](https://github.com/Shakir-Afridi/react-handyhooks/issues)
 [![typescript](https://img.shields.io/badge/TypeScript-Ready-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![react](https://img.shields.io/badge/React-19+-61dafb?logo=react)](https://react.dev/)
-![Coverage](https://img.shields.io/badge/Coverage-93%25-brightgreen)
 
 A lightweight and powerful collection of reusable **React hooks** designed to simplify state management, event handling, and UI logic in your React apps.
 
@@ -13,7 +12,7 @@ A lightweight and powerful collection of reusable **React hooks** designed to si
 ## 🚀 Features
 
 - 🧠 **Smart utilities** — abstract common React logic into reusable hooks  
-- 🪶 **Lightweight** — zero external dependencies  
+- 🪶 **Lightweight** — fast, efficient, and easy to integrate
 - ⚙️ **TypeScript support** — fully typed API  
 - 🧩 **Composable** — integrate easily into existing code  
 - 🔧 **Framework agnostic** — works with any React setup (Vite, CRA, Next.js, etc.)
@@ -53,8 +52,8 @@ npm link react-hookstack
 | useAsync                | Handle async operations                          |
 | useBoolean              | Manage boolean state                             |
 | useClickOutside         | Detect clicks outside element                    |
-| useClipboardHistory     | Keep track of copied clipboard values           |
-| useCookie               | Read and write browser cookies                  |
+| useClipboardHistory     | Keep track of copied clipboard values            |
+| useCookie               | Read and write browser cookies                   |
 | useCopyToClipboard      | Copy text to clipboard                           |
 | useCounter              | Simple counter hook                              |
 | useDarkMode             | Detect dark mode preference                      |
@@ -63,12 +62,12 @@ npm link react-hookstack
 | useDrag                 | Handle drag events                               |
 | useEventCallback        | Stable event callback function                   |
 | useEventListener        | Attach event listener safely                     |
-| useFetch                | Fetch data with state management                |
-| useFocus                | Manage element focus                              |
+| useFetch                | Fetch data with state management                 |
+| useFocus                | Manage element focus                             |
 | useFormState            | Manage form state                                |
 | useGeoLocation          | Get user's geographic location                   |
 | useHover                | Track hover state                                |
-| useIdle                 | Detect user inactivity                            |
+| useIdle                 | Detect user inactivity                           |
 | useIndexedDB            | Interact with IndexedDB storage                  |
 | useInput                | Manage input value                               |
 | useIntersectionObserver | Observe element visibility in viewport           |
@@ -76,33 +75,33 @@ npm link react-hookstack
 | useLocalStorage         | Sync state with localStorage                     |
 | useLongPress            | Detect long press actions                        |
 | useMap                  | Manage Map state                                 |
-| useMergeState           | Merge object state updates                        |
-| useMousePosition        | Track mouse cursor position                       |
-| useOnlineStatus         | Detect online/offline status                      |
-| usePersistedState       | Persist state in storage                          |
-| usePortal               | Render element in React portal                    |
-| usePreferredLanguage    | Get user's preferred language                     |
-| usePrevious             | Get previous value                                |
-| usePreviousDistinct     | Get previous distinct value                        |
+| useMergeState           | Merge object state updates                       |
+| useMousePosition        | Track mouse cursor position                      |
+| useOnlineStatus         | Detect online/offline status                     |
+| usePersistedState       | Persist state in storage                         |
+| usePortal               | Render element in React portal                   |
+| usePreferredLanguage    | Get user's preferred language                    |
+| usePrevious             | Get previous value                               |
+| usePreviousDistinct     | Get previous distinct value                      |
 | useRafInterval          | Interval synced with requestAnimationFrame       |
 | useRafState             | State synced with requestAnimationFrame          |
 | useReducerWithLogger    | Reducer with state change logging                |
 | useRequestAnimationFrame| Execute function every animation frame           |
-| useSSE                  | Handle Server-Sent Events                         |
-| useScrollPosition       | Track scroll position                             |
-| useSessionStorage       | Sync state with sessionStorage                    |
-| useThrottle             | Throttle changing values                           |
-| useThrottledCallback    | Throttled function execution                       |
-| useTimeout              | Execute callback after delay                       |
-| useToggle               | Toggle boolean state                               |
-| useToggleSet            | Toggle values in a set                             |
+| useSSE                  | Handle Server-Sent Events                        |
+| useScrollPosition       | Track scroll position                            |
+| useSessionStorage       | Sync state with sessionStorage                   |
+| useThrottle             | Throttle changing values                         |
+| useThrottledCallback    | Throttled function execution                     |
+| useTimeout              | Execute callback after delay                     |
+| useToggle               | Toggle boolean state                             |
+| useToggleSet            | Toggle values in a set                           |
 | useURLSearchParams      | Read and update URL search parameters            |
-| useUndoRedo             | Undo and redo state changes                       |
-| useUpdateEffect         | Run effect except first render                     |
-| useVisibilityChange     | Detect page visibility changes                     |
-| useWebSocket            | Handle WebSocket connection                        |
-| useWhyDidYouUpdate      | Debug component re-renders                          |
-| useWindowSize           | Track window size                                   |
+| useUndoRedo             | Undo and redo state changes                      |
+| useUpdateEffect         | Run effect except first render                   |
+| useVisibilityChange     | Detect page visibility changes                   |
+| useWebSocket            | Handle WebSocket connection                      |
+| useWhyDidYouUpdate      | Debug component re-renders                       |
+| useWindowSize           | Track window size                                |
 
 ## 🧩 Example Usage
 
