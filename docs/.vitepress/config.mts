@@ -164,7 +164,7 @@ export default defineConfig({
             },
             {
                 text: "Browser Hooks",
-                collapsed: false,
+                collapsed: true,
                 items: [
                     {
                         text: "useInput",
