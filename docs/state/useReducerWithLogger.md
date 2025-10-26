@@ -91,6 +91,8 @@ function useReducerWithLogger<S, A>(
 ## ⚙️ Implementation
 
 ```tsx
+import { useReducer, Reducer, useRef, useEffect } from "react";
+
 function useReducerWithLogger<S, A>(reducer: Reducer<S, A>, initialState: S) {
     const [state, dispatch] = useReducer(reducer, initialState);
     const prevStateRef = useRef<S>(state);

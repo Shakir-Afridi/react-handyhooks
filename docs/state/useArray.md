@@ -72,6 +72,8 @@ function Example() {
 ## ⚙️ Implementation
 
 ```tsx
+import { useState, useCallback } from "react";
+
 export function useArray<T>(initialValue: T[] = []) {
     const [array, setArray] = useState<T[]>(initialValue);
 

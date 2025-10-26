@@ -85,6 +85,8 @@ export default function Example() {
 ## ⚙️ Implementation
 
 ```tsx
+import { useState, useCallback } from "react";
+
 export function useToggleSet<T>(initialSet: Set<T> = new Set()) {
     const [set, setSet] = useState<Set<T>>(initialSet);
 

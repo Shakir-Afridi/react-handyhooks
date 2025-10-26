@@ -15,7 +15,7 @@ export default defineConfig({
         sidebar: [
             {
                 text: "State Hook",
-                collapsed: false,
+                collapsed: true,
                 items: [
                     { text: "useArray", link: "/state/useArray" },
                     { text: "useBoolean", link: "/state/useBoolean" },
@@ -42,9 +42,15 @@ export default defineConfig({
                 text: "Effect Hook",
                 collapsed: true,
                 items: [
-                    { text: "useDebounce", link: "/effect/useDebounce" },
-                    { text: "useInterval", link: "/effect/useInterval" },
-                    { text: "useTimeout", link: "/effect/useTimeout" },
+                    { text: "useDebounce", link: "/effects/useDebounce" },
+                    { text: "useThrottle", link: "/effects/useThrottle" },
+                    { text: "useTimeout", link: "/effects/useTimeout" },
+                    { text: "useInterval", link: "/effects/useInterval" },
+                    {
+                        text: "useUpdateEffect",
+                        link: "/effects/useUpdateEffect",
+                    },
+                    { text: "useAsync", link: "/effects/useAsync" },
                 ],
             },
             {
@@ -52,16 +58,27 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                     {
-                        text: "useDocumentTitle",
-                        link: "/ui/useDocumentTitle",
+                        text: "useClickOutside",
+                        link: "/ui/useClickOutside",
                     },
                     {
-                        text: "useElementSize",
-                        link: "/ui/useElementSize",
+                        text: "useClipboardHistory",
+                        link: "/ui/useClipboardHistory",
                     },
                     { text: "useHover", link: "/ui/useHover" },
-                    { text: "useMediaQuery", link: "/ui/useMediaQuery" },
-                    { text: "useWindowSize", link: "/ui/useWindowSize" },
+                    { text: "useFocus", link: "/ui/useFocus" },
+                    { text: "useDrag", link: "/ui/useDrag" },
+                    { text: "useDarkMode", link: "/ui/useDarkMode" },
+                    { text: "useLongPress", link: "/ui/useLongPress" },
+                    { text: "useMousePosition", link: "/ui/useMousePosition" },
+                    {
+                        text: "useIntersectionObserver",
+                        link: "/ui/useIntersectionObserver",
+                    },
+                    {
+                        text: "useScrollPosition",
+                        link: "/ui/useScrollPosition",
+                    },
                 ],
             },
             {
@@ -76,29 +93,54 @@ export default defineConfig({
                         text: "useSessionStorage",
                         link: "/storage/useSessionStorage",
                     },
+                    {
+                        text: "usePersistedState",
+                        link: "/storage/usePersistedState",
+                    },
+                    { text: "useIndexedDB", link: "/storage/useIndexedDB" },
+                    { text: "useCookie", link: "/storage/useCookie" },
+                    {
+                        text: "useURLSearchParams",
+                        link: "/storage/useURLSearchParams",
+                    },
                 ],
             },
             {
                 text: "Performance Hook",
                 collapsed: true,
                 items: [
-                    { text: "useAsync", link: "/performance/useAsync" },
-                    { text: "useFetch", link: "/performance/useFetch" },
                     {
-                        text: "useMemoizedFn",
-                        link: "/performance/useMemoizedFn",
+                        text: "useRequestAnimationFrame",
+                        link: "/performance/useRequestAnimationFrame",
                     },
+                    {
+                        text: "useRafInterval",
+                        link: "/performance/useRafInterval",
+                    },
+                    { text: "useIdle", link: "/performance/useIdle" },
                 ],
             },
             {
                 text: "Developer Hook",
                 collapsed: true,
                 items: [
-                    { text: "useLogger", link: "/developer/useLogger" },
                     {
                         text: "useWhyDidYouUpdate",
                         link: "/developer/useWhyDidYouUpdate",
                     },
+                    {
+                        text: "useEventCallback",
+                        link: "/developer/useEventCallback",
+                    },
+                    {
+                        text: "useDebouncedCallback",
+                        link: "/developer/useDebouncedCallback",
+                    },
+                    {
+                        text: "useThrottledCallback",
+                        link: "/developer/useThrottledCallback",
+                    },
+                    { text: "usePortal", link: "/developer/usePortal" },
                 ],
             },
             {
@@ -106,25 +148,56 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                     {
-                        text: "useOnlineStatus",
-                        link: "/network/useOnlineStatus",
+                        text: "useWebSocket",
+                        link: "/network/useWebSocket",
+                    },
+                    {
+                        text: "useSSE",
+                        link: "/network/useSSE",
+                    },
+                    {
+                        text: "useFetch",
+                        link: "/network/useFetch",
                     },
                 ],
             },
             {
-                text: "Browser Hook",
-                collapsed: true,
+                text: "Browser Hooks",
+                collapsed: false,
                 items: [
+                    {
+                        text: "useInput",
+                        link: "/browser/useInput",
+                    },
+                    {
+                        text: "useEventListener",
+                        link: "/browser/useEventListener",
+                    },
+                    {
+                        text: "useClickOutside",
+                        link: "/browser/useClickOutside",
+                    },
+                    { text: "useWindowSize", link: "/browser/useWindowSize" },
+                    {
+                        text: "useNetworkStatus",
+                        link: "/browser/useNetworkStatus",
+                    },
                     { text: "useClipboard", link: "/browser/useClipboard" },
-                    { text: "useGeolocation", link: "/browser/useGeolocation" },
                 ],
             },
             {
                 text: "System Hook",
                 collapsed: true,
                 items: [
-                    { text: "useBattery", link: "/system/useBattery" },
-                    { text: "useDarkMode", link: "/system/useDarkMode" },
+                    {
+                        text: "useVisibilityChange",
+                        link: "/system/useVisibilityChange",
+                    },
+                    {
+                        text: "usePreferredLanguage",
+                        link: "/system/usePreferredLanguage",
+                    },
+                    { text: "useGeolocation", link: "/system/useGeolocation" },
                 ],
             },
         ],
