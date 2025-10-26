@@ -19,10 +19,18 @@ A lightweight and powerful collection of reusable **React hooks** designed to si
 
 ---
 
+📘 Documentation
+
+Comprehensive documentation is available here
+
+👉 [Documentation](https://shakir-afridi.github.io/react-handyhooks/docs)
+
+---
+
 ## 📘 Storybook
 
 Explore all hooks interactively on Storybook:  
-👉 [Live Demo](https://shakir-afridi.github.io/react-handyhooks/)
+👉 [Live Demo](https://shakir-afridi.github.io/react-handyhooks/storybook)
 
 ## 📦 Installation
 

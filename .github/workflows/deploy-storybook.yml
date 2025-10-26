@@ -1,10 +1,10 @@
-name: 📘 Deploy Storybook
+name: 🚀 Deploy Docs & Storybook
 
 on:
   push:
     branches:
-      - dev # Change this if you want a different branch
-  workflow_dispatch: # allows manual triggers from GitHub UI
+      - dev
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: 🧾 Checkout repository
         uses: actions/checkout@v4
 
       - name: ⚙️ Setup Node
@@ -25,14 +25,23 @@ jobs:
           node-version: 20
           cache: "npm"
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         run: npm ci
 
-      - name: Build Storybook
+      - name: 🏗️ Build Storybook
         run: npm run build-storybook
 
-      - name: Deploy to GitHub Pages
+      - name: 📘 Build VitePress Docs
+        run: npm run docs:build
+
+      - name: 🗂️ Organize Output
+        run: |
+          mkdir publish
+          mv storybook-static publish/storybook
+          mv docs/.vitepress/dist publish/docs
+
+      - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: storybook-static
+          publish_dir: ./publish

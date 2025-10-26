@@ -5,6 +5,7 @@ export default defineConfig({
     title: "React Hookstack",
     description:
         "A lightweight and powerful collection of reusable React hooks designed to simplify state management, event handling, and UI logic in your React apps.",
+    base: "/react-handyhooks/docs",
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
