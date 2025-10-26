@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as n}from"./chunks/framework.DoFkYLhE.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"network/index.md","filePath":"network/index.md"}'),r={name:"network/index.md"};function a(o,s,c,d,i,p){return n(),t("div")}const f=e(r,[["render",a]]);export{m as __pageData,f as default};
