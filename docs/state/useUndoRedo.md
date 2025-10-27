@@ -13,7 +13,7 @@ It maintains `past`, `present`, and `future` states, allowing you to easily roll
 ## 📦 Import
 
 ```ts
-import { useUndoRedo } from "@/hooks/useUndoRedo";
+import { useUndoRedo } from "react-hookstack";
 ```
 
 ## 🧠 Quick Example

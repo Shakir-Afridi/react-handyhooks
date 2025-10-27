@@ -19,7 +19,7 @@ It is a lightweight alternative to form libraries like Formik or React Hook Form
 ## 🚀 Usage
 
 ```tsx
-import { useFormState } from "your-library";
+import { useFormState } from "react-hookstack";
 
 function SignupForm() {
   const { values, errors, touched, handleChange, handleBlur, handleSubmit, resetForm } =

@@ -19,7 +19,7 @@ It’s ideal for managing UI elements like dialogs, dropdowns, or toggles.
 ## 🚀 Usage
 
 ```tsx
-import { useBoolean } from "your-library";
+import { useBoolean } from "react-hookstack";
 
 function ExampleComponent() {
   const { value, toggle, setTrue, setFalse } = useBoolean(false);

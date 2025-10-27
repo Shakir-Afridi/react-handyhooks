@@ -19,7 +19,7 @@ It provides helpful methods for incrementing, decrementing, resetting, and direc
 ## 🚀 Usage
 
 ```tsx
-import { useCounter } from "your-library";
+import { useCounter } from "react-hookstack";
 
 function CounterExample() {
   const { count, increment, decrement, reset, set } = useCounter(0, {

@@ -30,7 +30,7 @@ It’s often used in debugging, change detection, and implementing custom animat
 
 ```tsx
 import { useState, useEffect } from "react";
-import { usePrevious } from "./usePrevious";
+import { usePrevious } from "react-hookstack";
 
 export default function Counter() {
   const [count, setCount] = useState(0);

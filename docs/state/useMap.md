@@ -19,7 +19,7 @@ It ensures updates are immutable and trigger re-renders when the map changes, wh
 ## 🚀 Usage
 
 ```tsx
-import { useMap } from "your-library";
+import { useMap } from "react-hookstack";
 
 function MapExample() {
   const { map, set, get, remove, has, clear, reset } = useMap<string, number>([

@@ -31,7 +31,7 @@ Instead of tracking *every* previous value, it only updates when the new value i
 
 ```tsx
 import { useState, useEffect } from "react";
-import usePreviousDistinct from "./usePreviousDistinct";
+import usePreviousDistinct from "react-hookstack";
 
 export default function DistinctExample() {
   const [name, setName] = useState("John");

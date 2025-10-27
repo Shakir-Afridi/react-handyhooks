@@ -30,7 +30,7 @@ This is especially useful for managing form data, configuration objects, or any 
 ## 💡 Example
 
 ```tsx
-import { useMergeState } from "./useMergeState";
+import { useMergeState } from "react-hookstack";
 
 function UserProfile() {
   const [user, setUser] = useMergeState({ name: "John", age: 25, city: "New York" });

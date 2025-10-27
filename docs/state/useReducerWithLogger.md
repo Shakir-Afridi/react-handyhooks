@@ -29,7 +29,7 @@ Perfect for debugging complex reducer logic, especially in large-scale state man
 
 ```tsx
 import React from "react";
-import useReducerWithLogger from "./useReducerWithLogger";
+import useReducerWithLogger from "react-hookstack";
 
 type Action = { type: "increment" | "decrement" };
 const reducer = (state: number, action: Action) => {

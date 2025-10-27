@@ -32,7 +32,7 @@ This hook is especially useful for **real-time data**, **interval logic**, or **
 
 ```tsx
 import { useEffect } from "react";
-import { useRefState } from "./useRefState";
+import { useRefState } from "react-hookstack";
 
 export default function RefStateExample() {
   const [count, setCount, countRef] = useRefState(0);

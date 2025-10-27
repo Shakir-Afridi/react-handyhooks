@@ -27,7 +27,7 @@ The `useToggle` hook provides a simple and efficient way to manage boolean state
 ## 💡 Example
 
 ```tsx
-import { useToggle } from "./useToggle";
+import { useToggle } from "react-hookstack";
 
 function ExampleComponent() {
   const [isOpen, toggleOpen] = useToggle(false);
