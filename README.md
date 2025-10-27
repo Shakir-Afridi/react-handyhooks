@@ -189,7 +189,7 @@ React Hookstack — maintained by passionate open-source developers who believe 
 
 ## ⭐ Support
 
-If you find this library useful, please give it a star ⭐ on [GitHub](https://shakir-afridi.github.io/react-handyhooks/storybook) —
+If you find this library useful, please give it a star ⭐ on [GitHub](https://github.com/Shakir-Afridi/react-handyhooks) —
 it helps others discover and support the project!
 
 ## Keywords
