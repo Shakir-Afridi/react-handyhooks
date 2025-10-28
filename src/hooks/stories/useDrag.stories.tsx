@@ -27,6 +27,7 @@ const UseDragDemo = () => {
                     </Typography>
                     <Box
                         onMouseDown={handleMouseDown}
+                        onTouchStart={handleMouseDown}
                         sx={{
                             width: 80,
                             height: 80,

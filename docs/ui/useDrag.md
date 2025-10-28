@@ -32,6 +32,7 @@ function Example() {
   return (
     <div
       onMouseDown={handleMouseDown}
+      onTouchStart={handleMouseDown}
       style={{
         position: 'absolute',
         left: position.x,
@@ -55,7 +56,7 @@ function Example() {
 | ---------------- | -------------------------- | ------------------------------ |
 | `dragging`       | `boolean`                  | True if dragging is active.    |
 | `position`       | `{ x: number; y: number }` | Current drag offset.           |
-| `handleMouseDown`| `(event) => void`          | Attach to draggable element.   |
+| `handleMouseDown`| `(event) => void`          | Attach to draggable element's `onMouseDown` **and** `onTouchStart`.   |
 
 ## ⚙️ Implementation
 
@@ -73,36 +74,62 @@ export function useDrag() {
     // Ref to store initial positions for calculations
     const startPos = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 
-    // Mouse move handler
-    const handleMouseMove = useCallback(
-        (event: MouseEvent) => {
-            setPosition({
-                x: event.clientX - startPos.current.x,
-                y: event.clientY - startPos.current.y,
-            });
-        },
-        [] // removed dragging from dependencies
-    );
+    // Mouse and touch move handler
+    const handlePointerMove = useCallback((event: MouseEvent | TouchEvent) => {
+        let clientX: number, clientY: number;
+        if ("touches" in event && event.touches.length > 0) {
+            clientX = event.touches[0].clientX;
+            clientY = event.touches[0].clientY;
+        } else if ("clientX" in event) {
+            clientX = event.clientX;
+            clientY = event.clientY;
+        } else {
+            return;
+        }
+        setPosition({
+            x: clientX - startPos.current.x,
+            y: clientY - startPos.current.y,
+        });
+    }, []);
 
-    // Mouse up handler to stop dragging
-    const handleMouseUp = useCallback(() => {
+    // Mouse and touch up/end handler to stop dragging
+    const handlePointerUp = useCallback(() => {
         setDragging(false);
-        window.removeEventListener("mousemove", handleMouseMove);
-        window.removeEventListener("mouseup", handleMouseUp);
-    }, [handleMouseMove]);
+        window.removeEventListener("mousemove", handlePointerMove);
+        window.removeEventListener("mouseup", handlePointerUp);
+        window.removeEventListener("touchmove", handlePointerMove);
+        window.removeEventListener("touchend", handlePointerUp);
+    }, [handlePointerMove]);
 
-    // Mouse down handler to start dragging
+    // Mouse down/touch start handler to start dragging
     const handleMouseDown = useCallback(
-        (event: React.MouseEvent) => {
+        (event: React.MouseEvent | React.TouchEvent) => {
             setDragging(true);
+            let clientX: number, clientY: number;
+            if (
+                "touches" in event &&
+                (event as React.TouchEvent).touches.length > 0
+            ) {
+                clientX = (event as React.TouchEvent).touches[0].clientX;
+                clientY = (event as React.TouchEvent).touches[0].clientY;
+            } else if ("clientX" in event) {
+                clientX = (event as React.MouseEvent).clientX;
+                clientY = (event as React.MouseEvent).clientY;
+            } else {
+                return;
+            }
             startPos.current = {
-                x: event.clientX - position.x,
-                y: event.clientY - position.y,
+                x: clientX - position.x,
+                y: clientY - position.y,
             };
-            window.addEventListener("mousemove", handleMouseMove);
-            window.addEventListener("mouseup", handleMouseUp);
+            window.addEventListener("mousemove", handlePointerMove);
+            window.addEventListener("mouseup", handlePointerUp);
+            window.addEventListener("touchmove", handlePointerMove, {
+                passive: false,
+            });
+            window.addEventListener("touchend", handlePointerUp);
         },
-        [handleMouseMove, handleMouseUp, position]
+        [handlePointerMove, handlePointerUp, position]
     );
 
     return { dragging, position, handleMouseDown };
@@ -112,7 +139,7 @@ export function useDrag() {
 ## 💡 Notes
 
 - Tracks drag state and position.
-- Attach `handleMouseDown` to any draggable element.
+- Attach `handleMouseDown` to both `onMouseDown` and `onTouchStart` for mobile support.
 
 ## 🧾 Type Definition
 
@@ -120,7 +147,7 @@ export function useDrag() {
 type UseDragResult = {
   dragging: boolean;
   position: { x: number; y: number };
-  handleMouseDown: (event: React.MouseEvent) => void;
+  handleMouseDown: (event: React.MouseEvent | React.TouchEvent) => void;
 };
 ```
 
@@ -128,6 +155,6 @@ type UseDragResult = {
 
 | Feature         | Description                |
 | --------------- | ------------------------- |
-| 🖱️ Drag support | Tracks drag and position  |
+| 🖱️🟦 Drag support | Tracks drag and position on mouse and touch devices |
 | ⚡ Lightweight   | Minimal overhead          |
 | 🧩 Easy to use   | Simple API                |
